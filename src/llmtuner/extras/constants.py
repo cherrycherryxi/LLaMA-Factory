@@ -45,9 +45,9 @@ def register_model_group(
 
 register_model_group(
     models={
-        "Baichuan-7B-Base": "baichuan-inc/Baichuan-7B",
-        "Baichuan-13B-Base": "baichuan-inc/Baichuan-13B-Base",
-        "Baichuan-13B-Chat": "baichuan-inc/Baichuan-13B-Chat"
+        # "Baichuan-7B-Base": "baichuan-inc/Baichuan-7B",
+        # "Baichuan-13B-Base": "baichuan-inc/Baichuan-13B-Base",
+        "Baichuan-13B-Chat": "/workspace/nlp_models/Baichuan-13B-Chat"
     },
     module="W_pack",
     template="baichuan"
@@ -56,10 +56,10 @@ register_model_group(
 
 register_model_group(
     models={
-        "Baichuan2-7B-Base": "baichuan-inc/Baichuan2-7B-Base",
-        "Baichuan2-13B-Base": "baichuan-inc/Baichuan2-13B-Base",
-        "Baichuan2-7B-Chat": "baichuan-inc/Baichuan2-7B-Chat",
-        "Baichuan2-13B-Chat": "baichuan-inc/Baichuan2-13B-Chat"
+        # "Baichuan2-7B-Base": "baichuan-inc/Baichuan2-7B-Base",
+        # "Baichuan2-13B-Base": "baichuan-inc/Baichuan2-13B-Base",
+        "Baichuan2-7B-Chat": "/workspace/nlp_models/Baichuan2-7B-Chat",
+        "Baichuan2-13B-Chat": "/workspace/nlp_models/Baichuan2-13B-Chat"
     },
     module="W_pack",
     template="baichuan2"
@@ -97,7 +97,7 @@ register_model_group(
 
 register_model_group(
     models={
-        "ChatGLM2-6B-Chat": "THUDM/chatglm2-6b"
+        "ChatGLM2-6B-Chat": "/workspace/nlp_models/chatglm2-6b"
     },
     module="query_key_value",
     template="chatglm2"
@@ -106,8 +106,8 @@ register_model_group(
 
 register_model_group(
     models={
-        "ChatGLM3-6B-Base": "THUDM/chatglm3-6b-base",
-        "ChatGLM3-6B-Chat": "THUDM/chatglm3-6b"
+        # "ChatGLM3-6B-Base": "THUDM/chatglm3-6b-base",
+        "ChatGLM3-6B-Chat": "/workspace/nlp_models/chatglm3-6b"
     },
     module="query_key_value",
     template="chatglm3"
@@ -116,10 +116,10 @@ register_model_group(
 
 register_model_group(
     models={
-        "ChineseLLaMA2-7B": "ziqingyang/chinese-llama-2-7b",
-        "ChineseLLaMA2-13B": "ziqingyang/chinese-llama-2-13b",
-        "ChineseLLaMA2-7B-Chat": "ziqingyang/chinese-alpaca-2-7b",
-        "ChineseLLaMA2-13B-Chat": "ziqingyang/chinese-alpaca-2-13b"
+        # "ChineseLLaMA2-7B": "ziqingyang/chinese-llama-2-7b",
+        # "ChineseLLaMA2-13B": "ziqingyang/chinese-llama-2-13b",
+        # "ChineseLLaMA2-7B-Chat": "ziqingyang/chinese-alpaca-2-7b",
+        "ChineseLLaMA2-13B-Chat": "/workspace/nlp_models/Llama2-Chinese-13b-Chat"
     },
     template="llama2_zh"
 )
@@ -141,10 +141,10 @@ register_model_group(
 
 register_model_group(
     models={
-        "InternLM-7B": "internlm/internlm-7b",
-        "InternLM-20B": "internlm/internlm-20b",
-        "InternLM-7B-Chat": "internlm/internlm-chat-7b",
-        "InternLM-20B-Chat": "internlm/internlm-chat-20b"
+        # "InternLM-7B": "internlm/internlm-7b",
+        # "InternLM-20B": "internlm/internlm-20b",
+        "InternLM-7B-Chat": "/workspace/nlp_models/internlm-chat-7b",
+        "InternLM-20B-Chat": "/workspace/nlp_models/internlm-chat-20b"
     },
     template="intern"
 )
@@ -192,10 +192,10 @@ register_model_group(
 
 register_model_group(
     models={
-        "Qwen-7B": "Qwen/Qwen-7B",
-        "Qwen-14B": "Qwen/Qwen-14B",
-        "Qwen-7B-Chat": "Qwen/Qwen-7B-Chat",
-        "Qwen-14B-Chat": "Qwen/Qwen-14B-Chat"
+        # "Qwen-7B": "Qwen/Qwen-7B",
+        # "Qwen-14B": "Qwen/Qwen-14B",
+        # "Qwen-7B-Chat": "Qwen/Qwen-7B-Chat",
+        "Qwen-14B-Chat": "/workspace/models/Qwen-14B-Chat"
     },
     module="c_attn",
     template="qwen"
@@ -226,4 +226,23 @@ register_model_group(
         "Yi-6B": "01-ai/Yi-6B",
         "Yi-34B": "01-ai/Yi-34B"
     }
+)
+
+register_model_group(
+    models={
+        "sqlcoder": "/workspace/nlp_models/sqlcoder",
+    },
+)
+
+register_model_group(
+    models={
+        "sqlcoder2": "/workspace/nlp_models/sqlcoder2"
+    },
+)
+
+register_model_group(
+    models={
+        "WizardCoder": "/workspace/nlp_models/WizardCoder-Python-34B-V1.0"
+    },
+    template="default"
 )
